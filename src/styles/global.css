@@ -34,6 +34,8 @@
 }
 
 html {
+    color-scheme: dark;
+
     font-family: system-ui;
 }
 
@@ -52,8 +54,8 @@ optgroup {
 }
 
 body {
-    background-color: var(--color-gray-95);
-    color: var(--color-gray-10);
+    background-color: var(--color-gray-10);
+    color: var(--color-gray-90);
 
     & > header,
     & > main,
