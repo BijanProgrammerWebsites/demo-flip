@@ -14,18 +14,18 @@ main {
         }
 
         > ul {
-            overflow: hidden scroll;
-
             display: grid;
             align-content: start;
 
-            block-size: 40rem;
+            min-block-size: 40rem;
 
             border: 1px solid var(--color-gray-80);
 
             list-style: none;
 
             > li {
+                background-color: var(--color-gray-98);
+
                 display: flex;
 
                 padding: 1rem;

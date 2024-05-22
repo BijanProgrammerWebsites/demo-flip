@@ -52,6 +52,9 @@ optgroup {
 }
 
 body {
+    background-color: var(--color-gray-95);
+    color: var(--color-gray-10);
+
     & > header,
     & > main,
     & > footer {
