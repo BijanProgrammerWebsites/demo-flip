@@ -5,7 +5,7 @@ on:
 
 jobs:
     deploy:
-        uses: BijanProgrammerFreelancing/hub/.github/workflows/deploy-vite.yml@master
+        uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-vite.yml@master
         with:
             host: demo.bijanprogrammer.com
             base-href: /flip/
