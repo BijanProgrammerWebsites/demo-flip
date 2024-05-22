@@ -1,0 +1,11 @@
+name: Deploy
+on:
+    push:
+        branches: [master]
+
+jobs:
+    deploy:
+        uses: BijanProgrammerFreelancing/hub/.github/workflows/deploy-vite.yml@master
+        with:
+            host: demo.bijanprogrammer.com
+            base-href: /flip/
