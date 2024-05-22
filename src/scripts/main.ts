@@ -1,11 +1,14 @@
 import {DownloadManagerService} from '../services/download-manager.service.ts';
 
+const downloadButton = document.querySelector<HTMLButtonElement>('section#queue > button')!;
+
 async function main(): Promise<void> {
-    const downloadButton = document.querySelector('section#queue > button')!;
     downloadButton.addEventListener('click', downloadButtonClickHandler, {once: true});
 }
 
 async function downloadButtonClickHandler(): Promise<void> {
+    downloadButton.disabled = true;
+
     const downloadManager = new DownloadManagerService();
     await downloadManager.startQueue();
 }

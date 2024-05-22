@@ -22,7 +22,9 @@ main {
 
             padding: 0.5rem 1rem;
 
-            cursor: pointer;
+            &:not([disabled]) {
+                cursor: pointer;
+            }
         }
 
         > ul {
