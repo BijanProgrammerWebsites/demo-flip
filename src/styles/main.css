@@ -7,13 +7,27 @@ main {
 
     section {
         display: grid;
+        grid-template-areas: "heading button" "list list";
+        grid-template-columns: 1fr auto;
         gap: 0.5rem;
 
         > .heading {
+            grid-area: heading;
+
             font-weight: 500;
         }
 
+        > button {
+            grid-area: button;
+
+            padding: 0.5rem 1rem;
+
+            cursor: pointer;
+        }
+
         > ul {
+            grid-area: list;
+
             display: grid;
             align-content: start;
 
