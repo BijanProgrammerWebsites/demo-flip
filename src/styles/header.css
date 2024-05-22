@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding-block: 1rem;
+
+    svg {
+        block-size: 1em;
+        inline-size: auto;
+    }
+
+    .title {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        > li {
+            a {
+                color: inherit;
+
+                font-size: 2rem;
+            }
+        }
+    }
+}

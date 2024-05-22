@@ -1,0 +1,60 @@
+:root {
+    --color-white: hsl(0deg 0% 100%);
+    --color-gray-98: hsl(0deg 0% 98%);
+    --color-gray-95: hsl(0deg 0% 95%);
+    --color-gray-90: hsl(0deg 0% 90%);
+    --color-gray-80: hsl(0deg 0% 80%);
+    --color-gray-70: hsl(0deg 0% 70%);
+    --color-gray-60: hsl(0deg 0% 60%);
+    --color-gray-50: hsl(0deg 0% 50%);
+    --color-gray-40: hsl(0deg 0% 40%);
+    --color-gray-30: hsl(0deg 0% 30%);
+    --color-gray-20: hsl(0deg 0% 20%);
+    --color-gray-14: hsl(0deg 0% 14%);
+    --color-gray-10: hsl(0deg 0% 10%);
+    --color-black: hsl(0deg 0% 0%);
+
+    --box-shadow-subtle: 0 1px 4px rgb(0 0 0 / 25%);
+
+    --border-radius: 0.25rem;
+
+    --full-width: 75rem;
+    --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
+
+    --animation-duration-fast: 0.25s;
+    --animation-duration-normal: 0.5s;
+    --animation-duration-slow: 1s;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: system-ui;
+}
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+    font-family: inherit;
+}
+
+body {
+    & > header,
+    & > main,
+    & > footer {
+        padding-inline: var(--full-width-padding-inline);
+    }
+}
