@@ -22,6 +22,8 @@ header {
         align-items: center;
         gap: 1rem;
 
+        list-style: none;
+
         > li {
             a {
                 color: inherit;
